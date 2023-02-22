@@ -11,14 +11,22 @@ export default function Register() {
       <section className="w-screen h-screen bg-black flex justify-center items-center">
         <div className="w-[95%] h-[95%] bg-white flex justify-center">
         <div className="w-[25%] h-[25%] flex flex-col mt-[35px]">
-            <p className="font-semibold text-[35px] text-center">Login</p>
+            <p className="font-semibold text-[35px] text-center">Register</p>
             <Input
-              label="Alamat email"
-              placeholder={"email"}
+              label="nama"
+              placeholder={"nama"}
               inputStyle={
                 "border border-[rgb(194,194,194)] rounded-md px-2 py-1"
               }
-              labelStyle={"text-center font-semibold mt-[40px] mb-[5px]"}
+              labelStyle={"ml-[10px] font-semibold mt-[20px] mb-[5px]"}
+            />
+            <Input
+              label="username"
+              placeholder={"username"}
+              inputStyle={
+                "border border-[rgb(194,194,194)] rounded-md px-2 py-1"
+              }
+              labelStyle={"ml-[10px] font-semibold mt-[20px] mb-[5px]"}
             />
             <Input
               label="password"
@@ -26,7 +34,15 @@ export default function Register() {
               inputStyle={
                 "border border-[rgb(194,194,194)] rounded-md px-2 py-1"
               }
-              labelStyle={"text-center font-semibold mt-[20px] mb-[5px]"}
+              labelStyle={"ml-[10px] font-semibold mt-[20px] mb-[5px]"}
+            />
+            <Input
+              label="role"
+              placeholder={"role"}
+              inputStyle={
+                "border border-[rgb(194,194,194)] rounded-md px-2 py-1"
+              }
+              labelStyle={"ml-[10px] font-semibold mt-[20px] mb-[5px]"}
             />
             <p
               className="text-[rgb(194,194,194)] text-[13px] flex justify-end cursor-pointer"
@@ -37,7 +53,7 @@ export default function Register() {
               lupa password?
             </p>
             <Button
-              title={"login"}
+              title={"register"}
               buttonStyle={
                 "w-[100%] bg-black text-white p-1 rounded-md mt-[30px]"
               }
