@@ -1,10 +1,11 @@
 import React from "react";
+import { BiLabel } from "react-icons/bi";
 
-export default function Option({ label, option1,option2,optionStyle, ...props }) {
+export default function Option({ label,labelStyle,optionStyle, children,...props }) {
   return (
     <div className="flex flex-col ">
       <label
-        class="block mb-2 text-md text-white"
+        class={`${labelStyle}`}
       >
         {label}
       </label>
@@ -12,9 +13,7 @@ export default function Option({ label, option1,option2,optionStyle, ...props })
         {...props}
         className={`${optionStyle}`}
       >
-        <option selected>{label}</option>
-        <option >{option1}</option>
-        <option >{option2}</option>
+        {children}
       </select>
 
       {/* <label className="text-white">{label}</label>

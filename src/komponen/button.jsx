@@ -6,7 +6,9 @@ export default function Button({buttonStyle, title, text = "",color = "red", dis
         <button
           disabled={disabled}
           {...props}
-         
+         style = {{
+          backgroundColor : color
+         }}
           className={`${buttonStyle}`}
         >
           {title}
