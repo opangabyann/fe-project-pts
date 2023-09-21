@@ -1,7 +1,14 @@
-
+import React from "react";
+import { Routes, Route,} from "react-router-dom";
+import Home from "./page/home";
 
 export default function App (){
   return(
-    <p>branch main</p>
+    <React.Fragment>
+      <Routes > 
+      <Route path="/" element={<Home />} />
+      <Route path="/home" element={<Home />} />
+      </Routes>
+    </React.Fragment>
   )
 }
